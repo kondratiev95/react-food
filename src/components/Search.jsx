@@ -13,7 +13,6 @@ export const Search = ({cb = Function.prototype}) => {
         cb(value);
     }
 
-
     return (
         <div className="row">
             <div className="search-field col s12">
@@ -25,7 +24,11 @@ export const Search = ({cb = Function.prototype}) => {
                     onKeyDown={handleKey}
                     onChange={e => setValue(e.target.value)}
                 />
-                <button className="btn" onClick={handleSubmit}>Search</button>
+                <button 
+                    className="btn deep-purple lighten-3" 
+                    onClick={handleSubmit}>
+                    Search
+                </button>
             </div>
         </div>
     )
