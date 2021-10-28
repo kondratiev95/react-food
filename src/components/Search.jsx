@@ -25,7 +25,7 @@ export const Search = ({cb = Function.prototype}) => {
                     onChange={e => setValue(e.target.value)}
                 />
                 <button 
-                    className="btn deep-purple lighten-3" 
+                    className="btn red accent-1" 
                     onClick={handleSubmit}>
                     Search
                 </button>
